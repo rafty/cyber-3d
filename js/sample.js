@@ -693,8 +693,9 @@ function init() {
         }, 1000)
             .easing(TWEEN.Easing.Back.Out).start();
     }
-
-    setInterval(changeID, 5000);
+    
+    //setInterval(changeID, 8000);
+    setTimeout(changeID, 5000);
 }
 
 function onWindowResize() {
@@ -814,15 +815,20 @@ function changeID() {
     switch (ID) {
     case 1:
         changeFormation1();
+        setTimeout(changeID, 10000);
+
         break;
     case 2:
         changeFormation2();
+        setTimeout(changeID, 15000);
         break;
     case 3:
         changeFormation3();
+        setTimeout(changeID, 5000);
         break;
     default:
         changeFormation1();
+        setTimeout(changeID, 5000);
         break;
     }
 
