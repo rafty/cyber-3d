@@ -611,7 +611,7 @@ function init() {
     camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 1, 1000);
     //The height of the camera in comparison to the scene
     camera.position.x = -100;
-    camera.position.y = 250;
+    camera.position.y = -500;//250
     //The zoom level of the camera
     camera.position.z = 500;
 
